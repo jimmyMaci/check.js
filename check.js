@@ -5,16 +5,29 @@ var Check = function() {
 	self.isNull = _isNull;
 	self.isObject = _isObject;
 	
-	function _isUndefined(value) {
-	  return (typeof value === "undefined");
-	}
-	
 	function _isNull(value) {
 		return value == null;
+	}
+	
+	function _isUndefined(value) {
+	  return (typeof value === "undefined");
 	}
 	
 	function _isObject(value) {
 		return (typeof value === "object");
 	}
+	
+	function _isBoolean(value) {
+		return (typeof value === "boolean");
+	}
+
+	function _isNumeric(value) {
+		return (typeof value === "number");
+	}
+
+	function _isString(value) {
+		return (typeof value === "string");
+	}
+
 	
 }
