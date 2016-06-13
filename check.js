@@ -9,6 +9,6 @@ var Check = function() {
 	}
 	
 	function _isNull(value) {
-		return value === null;
+		return value == null;
 	}
 }
