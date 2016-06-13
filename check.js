@@ -4,6 +4,9 @@ var Check = function() {
 	self.isUndefined = _isUndefined;
 	self.isNull = _isNull;
 	self.isObject = _isObject;
+	self.isBoolean = _isBoolean;
+	self.isNumeric = _isNumeric;
+	self.isString = _isString;
 	
 	function _isNull(value) {
 		return value == null;
